@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortFolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--------------------------------------------------home page content---------------------------------------------------->
+    <div class="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">PortFolio</a></li>
+                    <li><a href="#">Contact Me</a></li>
+                </ul>
+            </nav>
+            <div id="heading">
+                <div class="row">
+                <div class="column1">
+                <p>Web devloper</p>
+                <h1>Hello, I'm <span>Shruti Yadav</span></h1>
+                <h6>currently pursuing MCA at ZIBACAR Narhe, Pune. <br>
+                Passionate about about Web devlopement. I am eager to <br>apply my academic knowledge and skills in a practical setting <br>through an intership opportunity.
+                </h6>
+                <br>
+                <a href="images/Resume_Shruti Yadav.pdf" download class="cvbtn cvbtn2" >Download CV</a>
+            </div>
+            <div class="column2">
+                <img src="images/profile.jpeg" >
+            </div>
+            </div>
+            </div>
+        </div>
+    </div>
+<!-- --------------------------------------------------------About tab-------------------------------------------------------- -->
+     
+    <div id="about">
+        <div class="container">
+            <div class="row1">
+                <div class="about-col1">
+                    <h1 class="subtitle1">About Me</h1>
+                </div>
+                <div class="about-col2">
+                    <p>
+                        Welcome to my portfolio! <br>
+                        I am dedicated and passionate student pursuing MCA.I invite you to explore my portfolio. My journey begins with mastering the fundamentals of HTML, CSS, and JavaScript, aiming to build responsive and interactive web pages that captivate users. I find joy in unraveling the complexities of front-end development, ensuring seamless navigation and accessibility across devices.
+                        <br><br>
+                        I am committed to staying updated with industry trends and best practices. My goal is to contribute to impactful digital experiences that blend functionality with aesthetics.
+                        <br><br>
+                        Beyond coding, I bring a strong attention to detail and problem-solving skills, essential for troubleshooting and optimizing websites for performance. I am also eager to explore back-end technologies like Node.js and databases such as MySQL to expand my skill set and create fully functional web applications.
+                        <br><br>
+                    
+                        <span>Let's connect and explore how we can shape the future of the web together!</span>
+                    </p>
+
+                    <div class="tabs">
+                        <p class="tab-links activelink" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tablist activetab" id="skills">
+                        <ul>
+                            <li><span>Web devlopment</span><br>
+                            web app devlopment</li>
+                            <li><span>app devlopment</span><br>
+                                building android /ios app</li>
+                        </ul>
+                    </div>
+                    <div class="tablist" id="education">
+                        <ul>
+                            <li><span>2024-2025</span><br>
+                                Pursuing MCA at ZIBACAR ,narhe pune</li>
+                                <li><span>2020-2023</span><br>
+                                   Done Graduation in B.Sc from Y.C College Islampur</li>
+                        </ul>
+                    </div>
+                    <div class="tablist" id="experience">
+                        <ul>
+                            <li><span>2024-current</span><br>Intership At Codsoft</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+<!--------------------------------------------------------------------services tab--------------------------------------------- -->
+    <hr>
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle2">My Services</h1>
+            <div class="servicelist">
+                <div>
+                    <h2>Website Design and Development</h2>
+                    <p>
+                        <ul>
+                            <li><span><b>Custom Website Development:</b></span><br>Building websites from scratch tailored to client <br> requirements, ensuring unique designs <br> and functionalities.</li>
+                            <br>
+                            <li><span><b>Responsive Web Design:</b></span><br> Creating websites that adapt seamlessly to <br>various screen <br>sizes and devices, enhancing user experience.</li>
+                        </ul>
+                    </p>
+                </div>
+                <div>
+                    <h2>Front-end Development</h2>
+                    <p>
+                        <ul>
+                            <li><span><b>HTML/CSS Development:</b></span><br>Writing clean and semantic HTML and <br>CSS code to structure and style web pages.</li>
+                            <br>
+                            <li><span><b>JavaScript Development:</b> </span><br> Implementing interactive elements and <br> dynamic functionalities using JavaScript <br> and libraries/frameworks like React,<br> Angular, or Vue.js.</li>
+                        </ul>
+                    </p>
+                </div>
+                <div>
+                    <h2>Back-end Development</h2>
+                    <p>
+                        <ul>
+                            <li><span><b>Server-side Scripting:</b></span><br>Developing server-side logic and APIs <br>using languages like Node.js, Python <br>(Django, Flask), PHP (Laravel), etc.</li>
+                            <br>
+                            <li><span><b>Database Integration:</b></span><br> Integrating and managing databases such <br>as MySQL, PostgreSQL, MongoDB <br> to store and retrieve data efficiently.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+<!---------------------------------------------------------------contact------------------------------------------------------------------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="column-left">
+                    <h1 class="subtitle3">Contact Me</h1>
+                    <p>shrutiyadav@gmail.com</p>
+                    <p>9087654321</p>
+                </div>
+                <div class="column-right">
+                    <form>
+                <input type="text" name="name" placeholder="Enter your name" required>
+                <input type="email" name="email" placeholder="Enter your Email" required>
+                <textarea name="message" rows="6" placeholder="Place your Message here"></textarea>
+                <button type="submit" class="submitbtn btn2">Send Message</button>
+            </form>
+            </div>
+            </div>
+        </div>
+<!---------------------------------------------------------Footer-------------------------------------------------------------- -->
+        <div class="footer">
+            <p>Copyright © 2024 Shruti. All rights reserved. <br>
+                Unauthorized use or reproduction of the content on this website is prohibited without prior permission.</p>
+        </div>
+    </div>
+
+<!-----------------------------------------------------------javascript----------------------------------------------------- -->
+
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tablists=document.getElementsByClassName("tablist");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("activelink");
+            }
+            for(tablist of tablists){
+                tablist.classList.remove("activetab");
+            }
+            event.currentTarget.classList.add("activelink");
+            document.getElementById(tabname).classList.add("activetab");
+        }
+    </script>
+</body>
+</html>

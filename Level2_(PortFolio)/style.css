@@ -1,0 +1,289 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: #fff;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: url("images/back.jpg");
+    background-size: cover;
+  background-position: center;
+}
+.container{
+    padding: 15px 5%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 150px;
+    /* box-shadow: 5px 5px 2px 1px rgba(243, 244, 245, 0.2);  */
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+.logo:hover, .logo:focus, .logo:active{
+    box-shadow: 0 0 20px rgb(245, 241, 242);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+nav ul li{
+    display: inline-block;
+    text-decoration: none;
+    margin: 10px 20px;
+ 
+}
+nav ul li a{
+    color: cornsilk;
+    text-decoration: none;
+    font-size: 20px;
+}
+nav ul li a:hover{
+    background-color: deeppink;
+    transition: 0.5s ease;
+}
+#heading{
+    margin-top: 10%;
+    font-size: 30px;
+}
+#heading h1{
+    margin-top: 20px;
+    font-size: 50px;
+}
+#heading h1 span{
+    color: deeppink;
+}
+#heading h6{
+    margin-top: 20px;
+    font-size: 15px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.row{
+    margin-left: none ;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;  
+}
+.cvbtn.cvbtn2{
+    display: inline-block;
+    background-color:  rgb(255, 5, 138);
+    padding: 12px 30px;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 6px;
+    color: rgb(252, 252, 252);
+}
+.column2 {
+    flex-basis: 30%;
+}
+.column2 img {
+    width: 90%;
+    box-shadow: 12px 12px 2px 1px rgba(212, 220, 221, 0.2);
+    animation: bounce 2s infinite, cursor .4s step-end infinite alternate;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* ----------------about me------------------------- */
+#about{
+    background-color: rgb(79, 58, 79);
+}
+.row1{
+ 
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.subtitle1{
+    font-size: 50px;
+    letter-spacing: 5px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 5s infinite,
+    cursor .4s step-end  infinite alternate ;
+}
+@keyframes cursor {
+    50%{border-color: transparent}
+}
+@keyframes typing{
+    from{width: 0}
+}
+.about-col1{
+    padding-top: 15%;
+    flex-basis: 20%;
+    font-size: 10px;
+    align-items: center;
+}
+.about-col1 h1{
+    color: rgb(233, 225, 225);
+    font-weight: 600;
+}
+.about-col2{
+    padding: 20px;
+    flex-basis: 70%;
+}
+.about-col2 p{
+    font-size: 17px;
+    margin: 5px;
+}
+.about-col2 p span{
+    color: rgb(235, 119, 142);
+    font-size: 20px;
+}
+.tabs {
+    display: flex;
+    margin: 20px 0 50px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    color: white;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+.tab-links.activelink::after {
+    width: 50%; 
+}
+.tablist ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tablist ul li span{
+    color: aqua;
+    font-size: 15px;
+}
+.tablist{
+    display: none;
+}
+.tablist.activetab{
+    display: block;
+}
+/* ------------------services------------------------- */
+#services{
+    padding: 30px 0;
+    background-color: rgb(79, 58, 79);
+}
+.subtitle2{
+    font-size: 50px;
+    margin-left: 40%; 
+}
+
+.servicelist{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 90px;
+}
+.servicelist div h2{
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: rgb(18, 14, 14);
+}
+.servicelist div{
+    background: #fff;
+    padding: 40px;
+    font-size: 15px;
+    font-weight: 300;
+    border-radius: 10px;
+    color: black;
+}
+.servicelist div:hover{
+    background-color: rgb(232, 45, 113);
+}
+/* -------------------------------------contact---------------------------------------------- */
+
+#contact{
+    background-color: rgb(79, 58, 79);
+
+}
+.subtitle3{
+    font-size: 50px;
+}
+.column-left{
+    flex-basis: 30%;
+}
+.column-right{
+    flex-basis: 60%;
+}
+.column-left p{
+    margin-top: 30px;
+}
+.submitbtn.btn2{
+    display: inline-block;
+    background-color:  rgb(255, 5, 138);
+    padding: 12px 30px;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 6px;
+    color: rgb(252, 248, 248);
+}
+.column-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #c1b7b7;
+    padding: 15px;
+    margin: 15px 0;
+    color: #130f0f;
+    font-size: 18px;
+    border-radius: 5px;
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: black;
+    font-weight: 300;
+    margin-top: 30px;
+}
